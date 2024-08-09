@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "UkpZQFHSHc+Ve60Ap8/ZORVhSai8khIWNkO24JzabRVFoA6CObINljBwAGCGYx4yTNyPnPOYY8wYY2OJG/NVWA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\caver\\OneDrive\\Área de Trabalho\\COLLEGE PROJECTS 2024 - 2 SEM\\.NET\\IniciandoComCsharp_2TDSPC\\MetacriticCrawler\\MetacriticCrawler.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\caver\\.nuget\\packages\\csvhelper\\33.0.1\\csvhelper.33.0.1.nupkg.sha512",
+    "C:\\Users\\caver\\.nuget\\packages\\htmlagilitypack\\1.11.62\\htmlagilitypack.1.11.62.nupkg.sha512"
+  ],
+  "logs": []
+}

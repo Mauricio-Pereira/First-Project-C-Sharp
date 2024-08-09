@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "IniciandoComCsharp_2TDSPC/1.0.0": {
+        "runtime": {
+          "IniciandoComCsharp_2TDSPC.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "IniciandoComCsharp_2TDSPC/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
