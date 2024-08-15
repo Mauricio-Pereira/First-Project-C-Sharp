@@ -1,0 +1,66 @@
+{
+  "version": 3,
+  "targets": {
+    "net8.0": {}
+  },
+  "libraries": {},
+  "projectFileDependencyGroups": {
+    "net8.0": []
+  },
+  "packageFolders": {
+    "C:\\Users\\caver\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\caver\\OneDrive\\Área de Trabalho\\COLLEGE PROJECTS 2024 - 2 SEM\\.NET\\First-Project-C-Sharp\\IniciandoComCsharp_2TDSPC\\CP01-TEST\\CP01-TEST.csproj",
+      "projectName": "CP01-TEST",
+      "projectPath": "C:\\Users\\caver\\OneDrive\\Área de Trabalho\\COLLEGE PROJECTS 2024 - 2 SEM\\.NET\\First-Project-C-Sharp\\IniciandoComCsharp_2TDSPC\\CP01-TEST\\CP01-TEST.csproj",
+      "packagesPath": "C:\\Users\\caver\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\caver\\OneDrive\\Área de Trabalho\\COLLEGE PROJECTS 2024 - 2 SEM\\.NET\\First-Project-C-Sharp\\IniciandoComCsharp_2TDSPC\\CP01-TEST\\obj\\",
+      "projectStyle": "PackageReference",
+      "configFilePaths": [
+        "C:\\Users\\caver\\AppData\\Roaming\\NuGet\\NuGet.Config"
+      ],
+      "originalTargetFrameworks": [
+        "net8.0"
+      ],
+      "sources": {
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net8.0": {
+        "targetAlias": "net8.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Users\\caver\\.dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}
