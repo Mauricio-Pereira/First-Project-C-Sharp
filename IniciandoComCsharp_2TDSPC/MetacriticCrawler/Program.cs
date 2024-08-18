@@ -38,7 +38,6 @@ Parallel.ForEach(urls, url =>
     html = null;
     GC.Collect();
 });
-
 foreach (var game in games)
 {
     Console.WriteLine(game.Name);
@@ -46,7 +45,6 @@ foreach (var game in games)
     Console.WriteLine(game.UserScore);
     Console.WriteLine();
 }
-
 //save the data to a csv file
 var csv = new StringBuilder();
 csv.AppendLine("Name, Metascore, UserScore");
