@@ -3,9 +3,9 @@ using System.Web;
 using CP01_TEST;
 using HtmlAgilityPack;
 
-var urlMain = "https://scryfall.com/sets/pcbb";
+var urlMain = "https://scryfall.com/sets/pblb";
 var urls = new List<string>();
-var cards = new List<SwCards>();
+var cards = new List<SwCard>();
 var html = new HtmlWeb().LoadFromWebAsync(urlMain).Result;
 var mainDiv = html.DocumentNode.SelectNodes("//*[@class='card-grid-inner']");
 
@@ -19,8 +19,7 @@ Parallel.ForEach(urls, link =>
 {
     var htmlCard = new HtmlWeb().LoadFromWebAsync(link).Result;
 
-    var cardName = htmlCard.DocumentNode.SelectSingleNode("//*[@class='card-text-card-name']");
-    var cardDesc = htmlCard.DocumentNode.SelectSingleNode("//*[@class='card-text-oracle']");
+    var cardName = HttpUtility.HtmlDecode(htmlCard.DocumentNode.SelectSingleNode("//*[@class='card-text-title']").InnerText.Trim());    var cardDesc = htmlCard.DocumentNode.SelectSingleNode("//*[@class='card-text-oracle']");
     // Seleciona todos os parágrafos dentro do cardDescNode
     var paragraphs = cardDesc.SelectNodes(".//p");
     
@@ -28,12 +27,20 @@ Parallel.ForEach(urls, link =>
     var cardDescText = string.Join(" ", paragraphs.Select(p => HttpUtility.HtmlDecode(p.InnerText.Trim().Replace("\r\n", " ")
         .Replace("\n", " ")
         .Replace("\r", " "))));
-    cards.Add(new SwCards(HttpUtility.HtmlDecode(cardName.InnerText.Trim()), cardDescText));
+    cards.Add(new SwCard(cardName, cardDescText));
+    
+    
     html = null;
     GC.Collect();
 });
 
-var csv = new StringBuilder();
-csv.AppendLine("Name | Description");
-csv.AppendLine(string.Join("\n", cards.Select(c => $"{c.Nome} | {c.Descricao}")));
-File.WriteAllText("cards.csv", csv.ToString(), Encoding.UTF8);
+
+using (var context = new SwCardsDbContext())
+{
+    context.Database.EnsureCreated();
+    context.SWCARDS.AddRange(cards);
+    context.SaveChanges();
+}
+
+Console.WriteLine("Fim do programa");
+

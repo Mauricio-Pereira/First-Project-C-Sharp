@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MetacriticCrawler")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+963d4c898ca016455f433dd3b752a2586c9ee563")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7f678e2e841c873202a796b45c6d84987ded58ac")]
 [assembly: System.Reflection.AssemblyProductAttribute("MetacriticCrawler")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MetacriticCrawler")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
