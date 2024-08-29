@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CodeFirstEF")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8bb4bd5439e0b41e3d32eb24dd0eb205874d90c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+845c34e5650d693cb216d28af98c5718f692fd02")]
 [assembly: System.Reflection.AssemblyProductAttribute("CodeFirstEF")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CodeFirstEF")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
