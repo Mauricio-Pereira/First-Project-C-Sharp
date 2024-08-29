@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IniciandoComCsharp_2TDSPC")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+974fcf0005789a0e2d5a42962597a317c9f55754")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b8bb4bd5439e0b41e3d32eb24dd0eb205874d90c")]
 [assembly: System.Reflection.AssemblyProductAttribute("IniciandoComCsharp_2TDSPC")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IniciandoComCsharp_2TDSPC")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

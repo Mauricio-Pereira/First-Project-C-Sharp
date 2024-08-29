@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Oracle.EntityFrameworkCore;
 
 namespace CP01_TEST;
 
@@ -16,7 +17,10 @@ public class SwCardsDbContext: DbContext
             .AddJsonFile("appsettings.json")
             .Build();
 
-        optionsBuilder.UseOracle(configuration.GetConnectionString("FiapOracleConnection"));
+        optionsBuilder.UseOracle(configuration.GetConnectionString("FiapOracleConnection"), options =>
+        {
+            options.CommandTimeout(120); 
+        });
     }
     
     protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -25,4 +29,5 @@ public class SwCardsDbContext: DbContext
             .Property(c => c.ID)
             .ValueGeneratedOnAdd();
     }
+    
 }
