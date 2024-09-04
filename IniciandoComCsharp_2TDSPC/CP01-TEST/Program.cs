@@ -1,5 +1,4 @@
 ﻿using System.Text;
-using System.Text.RegularExpressions;
 using System.Web;
 using CP01_TEST;
 using HtmlAgilityPack;
@@ -27,7 +26,8 @@ Parallel.ForEach(urls, link =>
     var paragraphs = cardDesc.SelectNodes(".//p");
     
     // Concatena o texto de todos os parágrafos
-    var cardDescText = string.Join(" ", paragraphs.Select(p => HttpUtility.HtmlDecode(p.InnerText.Trim().Replace("\r\n", " ")
+    var cardDescText = string.Join(" ", paragraphs.Select(p => HttpUtility.HtmlDecode(p.InnerText.Trim()
+        .Replace("\r\n", " ")
         .Replace("\n", " ")
         .Replace("\r", " "))));
     cards.Add(new SwCard(cardName, cardDescText));

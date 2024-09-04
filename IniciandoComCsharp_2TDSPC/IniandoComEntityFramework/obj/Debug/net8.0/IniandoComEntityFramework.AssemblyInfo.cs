@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("IniandoComEntityFramework")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+845c34e5650d693cb216d28af98c5718f692fd02")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+63fe7ac014ae96510eb2459f111ce5515d62956c")]
 [assembly: System.Reflection.AssemblyProductAttribute("IniandoComEntityFramework")]
 [assembly: System.Reflection.AssemblyTitleAttribute("IniandoComEntityFramework")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
